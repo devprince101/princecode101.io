@@ -1,0 +1,23 @@
+{
+  "name": "princecode101.io",
+  "version": "1.0.0",
+  "description": "My first Nodejs project.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devprince101/princecode101.io.git"
+  },
+  "author": "Prince Mwenyemali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devprince101/princecode101.io/issues"
+  },
+  "homepage": "https://github.com/devprince101/princecode101.io#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
