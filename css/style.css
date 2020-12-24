@@ -1,0 +1,248 @@
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+:root {
+    --primary : #035982;
+    --secondary : rgb(125,225,225);
+    --dark : rgba(50,50,50,.8);
+    --success : green;
+    --black: #000000;
+    --clear-black : rgba(0,0,0,.4);
+    --dark-clear-black :rgba(0,0,0,.6);
+    --one : rgb(255,255,255);
+    --two : rgb(220,220,220);
+    --clear-white : rgba(255,255,255,.9);
+    --clear : rgba(255,255,255,.4);
+}
+ body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+ }
+ html, body {
+     scroll-behavior: smooth;
+ }
+ a:hover {
+     color:var(--secondary);
+     text-decoration: solid underline;
+ }
+ header {
+    width:100vw;
+    height: 60px;
+    margin: 0 ;
+    padding: 0;
+    position: fixed;
+    top:0;
+    line-height:50px;
+    background-color: var(--clear-black);
+    z-index:80;
+ }
+ .navbar {
+     width: 90%;
+     height:100%;
+     margin: 0 auto;
+     padding: 0;
+     position: relative;
+ }
+ .logo {
+     color:var(--one);
+     font-size:40px;
+     position: relative;
+     font-weight: 900;
+     margin-bottom:0;
+ }
+#Icon_button {
+    background-color: transparent;
+    padding: 1em .6em;
+    border: none;
+    outline: none;
+    float:right;
+    position: relative;
+    top:1em;
+    display: none;
+}
+.hamburger {
+    position: relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display:block;
+    width:25px;
+    height:3px;
+    background:var(--one);
+    content: '';
+}
+.hamburger::before {
+    position:absolute;
+    top:7px;
+}
+.hamburger::after {
+    position:absolute;
+    top:-7px;
+}
+ #about {
+     width:100vw;
+     height:100vh;
+     position: relative;
+ }
+ .nav_list {
+     float:right;
+     display:flex;
+     justify-content: space-around;
+     align-items: center;
+     position: relative;
+     height: 100%;
+ }
+ .list {
+     margin: 0 .3em;
+ }
+ .nav_link {
+     font-size:1.5em;
+     color: var(--one);
+     font-weight: 800;
+     padding: 0;
+     transition: all 250ms ease-in-out;
+ }
+ .nav_link_join {
+     padding: .4em .8em;
+     background-color: var(--primary);
+     font-size: large;
+     color:var(--one);
+     font-weight: 900;
+     border-radius: 1em;
+     transition: all 400ms ease-in-out;
+ }
+ .nav_link_join:hover {
+     background-color: transparent;
+ }
+
+ /*********** introduction **********/
+
+ #introduction {
+     width:100vw;
+     height: 100vh;
+     margin:0;
+     padding:0;
+     position: relative;
+
+ }
+ .wrapper {
+     width:100%;
+     height:100%;
+     padding:0;
+     margin:0;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     background-color: var(--dark-clear-black);
+ }
+ .welcome {
+     font-size:4em;
+     color:var(--one);
+     font-weight: 900;
+     padding:0;
+     position: relative;
+ }
+ .welcome1 {
+     font-weight:800;
+     font-size: x-large;
+     color: var(--secondary);
+     margin-top:1em;
+ }
+ .background {
+     width: 100vw;
+     height:100vh;
+     object-fit: cover;
+     position: fixed;
+     z-index: -1;
+ }
+ .welcome_link {
+     padding: 1em 2em;
+     margin: 1em 0;
+     color: var(--one);
+     background-color: var(--primary);
+     font-size:24px;
+     text-transform: capitalize;
+     font-weight: 900;
+     border-radius: 1em;
+ }
+
+ /*********** about *****************/
+
+#about {
+    width:100vw;
+    height:100vh;
+    position: relative;
+    margin:0;
+    padding:2em 0;
+    background-color: var(--clear-white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_heading {
+    font-size: xx-large;
+    color:var(--secondary);
+    position: relative;
+    font-weight: bolder;
+}
+.a_big {
+    font-size: 3em;
+    color: var(--black);
+    font-weight: 900;
+    margin:0;
+}
+.about_wrapper {
+    width: 80%;
+    margin:1em auto 0 auto;
+    padding: 1em 0;
+    position: relative;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.about-us-detail {
+    width: 80%;
+    margin: 1em auto;
+    padding:0;
+    position: relative;
+    font-size: large;
+}
+.about-us-detail2 {
+    width: 80%;
+    margin: 0 auto;
+    padding:.5em 0;
+    position: relative;
+}
+.h_header {
+    font-size:xx-large;
+    font-weight: 900;
+    color:var(--secondary);
+}
+.h_details {
+    margin: 0 ;
+    padding:0;
+    position: relative;
+    font-size: large;
+}
+
+ /*********** news ******************/
+
+ /*********** contact ***************/
+
+ /*********** blog ******************/
+
+ /*********** footer ****************/
+
+ /*********** bact to top ***********/
+ 
